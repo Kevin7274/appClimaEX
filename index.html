@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de clima</title>
+    <style>
+        body{
+            width: 100w;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>App para conocer el clima</h1>
+        <label for="cityInput">Ciudad: </label>
+        <input type="text" id="cityInput" placeholder="Ingrese la ciudad">
+        <button onclick="getWeatherByCity()">Consulta el clima :D</button>
+        <h2>Ciudad: <span id="cityName"></span></h2>
+        <h2><span id="temperature"></span>°C</h2>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
